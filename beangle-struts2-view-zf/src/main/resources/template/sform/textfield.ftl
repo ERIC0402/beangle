@@ -1,0 +1,2 @@
+[#ftl]
+<input type="text" id="${tag.id}" [#if tag.title??]title="${tag.title}"[/#if] name="${tag.name}" value="${tag.value?html}" maxlength="${tag.maxlength}" ${tag.parameterString}/>[#if tag.comment??]<label class="comment" title="${tag.comment}">？</label>[/#if]
